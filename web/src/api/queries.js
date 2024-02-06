@@ -178,46 +178,6 @@ export const contactpageDraft = id => groq`*[
 	seo ${seo}
 }`;
 
-export const aboutpage = groq`*[
-	_type == "aboutpage" &&
-	!(_id in path("drafts.**"))
-][0] {
-	description ${richText},
-	awards[] {
-		_key,
-		title,
-		year,
-		image ${asset},
-		link
-	},
-	clients[] {
-		_key,
-		image ${asset},
-		link
-	},
-	seo ${seo}
-}`;
-
-export const aboutpageDraft = id => groq`*[
-	_type == "aboutpage" &&
-	_id == '${id}'
-][0] {
-	description ${richText},
-	awards[] {
-		_key,
-		title,
-		year,
-		image ${asset},
-		link
-	},
-	clients[] {
-		_key,
-		image ${asset},
-		link
-	},
-	seo ${seo}
-}`;
-
 export const notFoundPage = groq`*[
 	_type == "notFound" &&
 	!(_id in path("drafts.**"))

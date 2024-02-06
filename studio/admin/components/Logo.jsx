@@ -5,6 +5,6 @@ export default () => (
 	<img
 		className={styles.logo}
 		src="../../static/logo.svg"
-		alt="EMOTE Films"
+		alt="Universal Element"
 	/>
 );
