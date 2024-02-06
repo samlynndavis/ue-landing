@@ -7,7 +7,7 @@ import header from './types/header';
 import footer from './types/footer';
 import homepage from './types/homepage';
 import workpage from './types/workpage';
-import aboutpage from './types/aboutpage';
+// import aboutpage from './types/aboutpage';
 import contactpage from './types/contactpage';
 import page from './types/page';
 import notFound from './types/notFound';
