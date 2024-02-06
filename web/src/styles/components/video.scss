@@ -1,0 +1,50 @@
+.aspect-video {
+	height: 0;
+	position: relative;
+	width: 100%;
+	padding-top: 56.25%; /* 16:9 Aspect Ratio */
+
+	> div {
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+}
+
+.image-fill {
+	position: relative;
+
+	video,
+	mux-player,
+	picture,
+	iframe,
+	img {
+	  position: absolute;
+	  top: 0;
+	  bottom: 0;
+	  left: 0;
+	  right: 0;
+	  width: 100%;
+	  height: 100%;
+	  object-fit: cover;
+	  object-position: center;
+	}
+}
+
+.image-tile {
+	video {
+		border-radius: 6px;
+	}
+}
+
+mux-player {
+	border-radius: 6px;
+}
+
+.hide-controls {
+	mux-player {
+		--controls: none;
+	}
+}

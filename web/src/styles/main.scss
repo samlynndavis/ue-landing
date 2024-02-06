@@ -1,0 +1,42 @@
+// Configuration
+@import '~magic-tricks/sass/reset';
+
+
+@import './tailwind';
+
+//                        //
+// === Project Styles === //
+//                        //
+
+@import './fonts';
+@import './typography';
+@import './colors';
+
+//                            //
+// === Project Components === //
+//                            //
+
+@import './components/video';
+@import './components/footer';
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	transition: background-color 400ms ease, color 400ms ease;
+
+	&.bg-black {
+		background-color: #000000;
+		color:#E6E7E8;
+	}
+}
+
+
+.hero__snap-container {
+    @media (min-width: 1000px) {
+		-ms-scroll-snap-type: y mandatory;
+		scroll-snap-type: y mandatory;
+		scroll-padding-top: 0;
+	}
+}

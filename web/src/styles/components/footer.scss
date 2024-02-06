@@ -1,0 +1,12 @@
+.footer {
+	&:after {
+		content: '';
+		position: absolute;
+		top: -75px;
+		left: 0;
+		height: 75px;
+		width: 100%;
+		background-color: inherit;
+		mask-image: linear-gradient(transparent, #000000);
+	}
+}

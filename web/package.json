@@ -1,0 +1,52 @@
+{
+	"name": "emote-films-frontend",
+	"private": true,
+	"version": "1.0.0",
+	"author": "Estudio Buena Suerte <info@buena-suerte.studio>",
+	"scripts": {
+		"start": "next dev",
+		"build": "npm run next:build",
+		"// NEXT //": "",
+		"next:build": "next build",
+		"next:start": "next start"
+	},
+	"dependencies": {
+		"@mux/mux-player-react": "^1.2.0",
+		"@sanity/block-content-to-react": "^3.0.0",
+		"@sanity/client": "^2.21.10",
+		"@types/node": "^17.0.21",
+		"@types/react": "^17.0.34",
+		"autoprefixer": "^10.4.0",
+		"body-scroll-lock": "^4.0.0-beta.0",
+		"buena-suerte": "^1.0.14",
+		"classnames": "^2.2.6",
+		"dotenv": "^10.0.0",
+		"framer-motion": "^7.6.1",
+		"groq": "^2.2.6",
+		"js-cookie": "^3.0.1",
+		"keen-slider": "^6.6.3",
+		"lodash": "^4.17.21",
+		"magic-tricks": "^0.4.0",
+		"next": "^12.3.1",
+		"postcss": "^8.3.11",
+		"query-string": "^7.1.1",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"sanity-mux-player": "^0.0.27",
+		"sass": "^1.49.0",
+		"simple-zustand-devtools": "^1.0.1",
+		"tailwindcss": "^3.0.15",
+		"typescript": "^4.6.2",
+		"unfetch": "^4.2.0",
+		"zustand": "^3.7.1"
+	},
+	"devDependencies": {
+		"@netlify/plugin-nextjs": "^4.2.7",
+		"adm-zip": "^0.5.9",
+		"babel-eslint": "^10.0.3",
+		"eslint": "^7.32.0",
+		"eslint-plugin-react": "^7.27.0",
+		"netlify-cli": "^6.14.19",
+		"prettier": "^2.2.1"
+	}
+}

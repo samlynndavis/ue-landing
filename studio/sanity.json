@@ -1,0 +1,49 @@
+{
+  "root": true,
+  "api": {
+    "projectId": "6l8v63pb",
+    "dataset": "production"
+  },
+  "project": {
+    "name": "Universal Element"
+  },
+  "plugins": [
+    "@sanity/base",
+    "@sanity/components",
+    "@sanity/default-layout",
+    "@sanity/default-login",
+    "@sanity/desk-tool",
+    "@sanity/color-input",
+    "@sanity/vision",
+    "@sanity/production-preview",
+    "deploy",
+    "media",
+    "tabs",
+    "mux-input",
+    "@sanity/code-input",
+    "note-field",
+    "goth-vimeo-input"
+  ],
+  "parts": [
+    {
+      "implements": "part:@sanity/form-builder/input/image/asset-sources",
+      "path": "./admin/utils/assetSources.js"
+    },
+    {
+      "name": "part:@sanity/base/schema",
+      "path": "./schemas/schema.js"
+    },
+    {
+      "implements": "part:@sanity/production-preview/resolve-production-url",
+      "path": "./admin/utils/resolveProductionLink.js"
+    },
+    {
+      "name": "part:@sanity/desk-tool/structure",
+      "path": "./deskStructure.js"
+    },
+    {
+      "implements": "part:@sanity/base/brand-logo",
+      "path": "./admin/components/Logo"
+    }
+  ]
+}

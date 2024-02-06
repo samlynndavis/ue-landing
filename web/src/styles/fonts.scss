@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Helvetica Neue LT Pro';
+    src: url('/fonts/HelveticaNeueLTPro-Roman.woff2') format('woff2'),
+        url('/fonts/HelveticaNeueLTPro-Roman.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue LT Pro';
+    src: url('/fonts/HelveticaNeueLTPro-Md.woff2') format('woff2'),
+        url('/fonts/HelveticaNeueLTPro-Md.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Self Modern';
+    src: url('/fonts/SelfModern-Regular.woff2') format('woff2'),
+        url('/fonts/SelfModern-Regular.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Self Modern';
+    src: url('/fonts/SelfModern-Italic.woff2') format('woff2'),
+        url('/fonts/SelfModern-Italic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ABC Oracle Book';
+    src: url('/fonts/ABCOracle-Book-Trial.woff2') format('woff2'),
+        url('/fonts/ABCOracle-Book-Trial.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
