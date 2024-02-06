@@ -84,7 +84,7 @@ export const getWorkPageDraft = async id => {
 };
 
 
-export const getAboutPage = () => client.fetch(queries.aboutpage);
+// export const getAboutPage = () => client.fetch(queries.aboutpage);
 export const getAbouPageDraft = id => client.fetch(queries.aboutpageDraft(id));
 
 // Dynamic Pages
