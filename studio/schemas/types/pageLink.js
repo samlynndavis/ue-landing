@@ -1,7 +1,7 @@
 import React from 'react';
 import Emoji from 'a11y-react-emoji';
 
-const Icon = () => <Emoji style={{fontSize: '2em'}} symbol="📝" />;
+const Icon = () => <Emoji style={{ fontSize: '2em' }} symbol="📝" />;
 
 export default {
 	name: 'pageLink',
@@ -13,7 +13,7 @@ export default {
 			name: 'page',
 			title: 'Page',
 			type: 'reference',
-			to: [{type: 'page'}, {type: 'aboutpage'}, {type: 'contactpage'}],
+			to: [{ type: 'page' }, { type: 'contactpage' }],
 			validation: Rule => Rule.required(),
 		},
 		{
@@ -34,6 +34,6 @@ export default {
 			title: 'title',
 			pageTitle: 'page.title',
 		},
-		prepare: ({title, pageTitle}) => ({title: title || pageTitle}),
+		prepare: ({ title, pageTitle }) => ({ title: title || pageTitle }),
 	},
 };

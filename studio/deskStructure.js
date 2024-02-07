@@ -8,7 +8,7 @@ import IframePreview from './admin/components/IframePreview.jsx';
 const PREVIEW_URL = process.env.SANITY_STUDIO_PREVIEW_URL;
 const PREVIEW_TOKEN = process.env.SANITY_STUDIO_CMS_PREVIEW_TOKEN;
 
-const PageIcon = () => <Emoji style={{fontSize: '2em'}} symbol="📝" />;
+const PageIcon = () => <Emoji style={{ fontSize: '2em' }} symbol="📝" />;
 
 //
 // === Pages ===
@@ -71,25 +71,6 @@ const allPageMenuItem = S.listItem()
 						S.document()
 							.documentId('workpage')
 							.schemaType('workpage')
-							.views([
-								S.view.form().icon(EditIcon),
-								S.view
-									.component(IframePreview)
-									.options({
-										previewURL: PREVIEW_URL,
-										token: PREVIEW_TOKEN,
-									})
-									.title('Draft Preview')
-									.icon(EyeIcon),
-							]),
-					),
-				S.listItem()
-					.title('About Page')
-					.schemaType('aboutpage')
-					.child(
-						S.document()
-							.documentId('aboutpage')
-							.schemaType('aboutpage')
 							.views([
 								S.view.form().icon(EditIcon),
 								S.view
