@@ -97,7 +97,7 @@ const Homepage = ({config = {}, seo = {}, list = [], description}) => {
 					className="flex flex-col items-center justify-center 1000:h-full-screen 1000:max-h-full-screen font-sans">
 					<div
 						style={{
-							height: `calc(var(--vh) - ${descHeight}px)`,
+							// height: `calc(var(--vh) - ${descHeight}px)`,
 						}}>
 							<div className="flex flex-col items-center justify-center relative mx-auto 1000:px-100 px-45 py-40">
 								<h1 className="1000:text-48 text-18 1000:leading-60 leading-28 1000:my-100 py-40">Universal Element brings to you the purest water nature intended, made possible by science, in the way nature intended.</h1>
