@@ -100,7 +100,7 @@ const Homepage = ({config = {}, seo = {}, list = [], description}) => {
 							// height: `calc(var(--vh) - ${descHeight}px)`,
 						}}>
 							<div className="flex flex-col items-center justify-center relative mx-auto 1000:px-100 px-45 py-40">
-								<h1 className="1000:text-48 text-18 1000:leading-60 leading-28 1000:py-100 py-40">Universal Element brings to you the purest water nature intended, made possible by science, in the way nature intended.</h1>
+								<h1 className="1000:text-48 text-18 1000:leading-60 leading-28 1000:py-100 py-40 text-justify">Universal Element brings to you the purest water nature intended, made possible by science, in the way nature intended.</h1>
 								<div className="800:flex 800:flex-col 1000:grid 1000:grid-cols-2 1000:gap-100 1000:py-100 gap-50 text-justify">
 										<div className="pb-20">
 											<div>
