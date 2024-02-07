@@ -152,7 +152,7 @@ const Footer = ({address, phone, email, coordinates, asPath}) => {
 		// </footer>
 		<footer
 			className={cx(
-				'mt-auto p-16 pt-1 flex justify-center items-center z-9 1000:fixed bottom-0 w-full',
+				'mt-auto p-16 pt-1 flex justify-center items-center z-9 fixed bottom-0 w-full',
 				{
 					// '1000:mt-0 1000:sticky 1000:bottom-0': asPath === '/about',
 					// 'snap-start': asPath !== '/about',
