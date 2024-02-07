@@ -23,9 +23,9 @@ const NotFoundPage = ({config = {}, title, seo = {}}) => {
 	const defaultMeta = config?.seo || {};
 
 	const fallbackMeta = {
-		metaTitle: 'Not Found - Eмоте Filмs®',
-		openGraphTitle: 'Not Found - Eмоте Filмs®',
-		twitterTitle: 'Not Found - Eмоте Filмs®',
+		metaTitle: 'Not Found - Universal Element®',
+		openGraphTitle: 'Not Found - Universal Element®',
+		twitterTitle: 'Not Found - Universal Element®',
 	};
 
 	const meta = {

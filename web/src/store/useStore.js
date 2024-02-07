@@ -2,7 +2,7 @@ import create from 'zustand';
 import cookie from 'js-cookie';
 import isBrowser from '../utils/isBrowser';
 
-import {mountStoreDevtool} from 'simple-zustand-devtools';
+import { mountStoreDevtool } from 'simple-zustand-devtools';
 
 export const EMOTE_INTRO_KEY = 'emote_intro';
 export const EMOTE_DARK_MODE = 'emote_dark_mode';
@@ -18,19 +18,19 @@ export const getInitialState = () => ({
 });
 
 export const toggleMobileMenu = (set, get) => () => {
-	const {isMobileMenuOpen} = get();
-	set({isMobileMenuOpen: !isMobileMenuOpen});
+	const { isMobileMenuOpen } = get();
+	set({ isMobileMenuOpen: !isMobileMenuOpen });
 };
 
 export const toggleDarkMode = (set, get) => () => {
-	const {isDarkMode} = get();
-	cookie.set(EMOTE_DARK_MODE, !isDarkMode, {expires: 21});
-	set({isDarkMode: !isDarkMode});
+	const { isDarkMode } = get();
+	cookie.set(EMOTE_DARK_MODE, !isDarkMode, { expires: 21 });
+	set({ isDarkMode: !isDarkMode });
 };
 
 export const hydrateDarkMode = set => async () => {
 	const isDarkMode = cookie.get(EMOTE_DARK_MODE) === 'true';
-	set(state => ({...state, isDarkMode}));
+	set(state => ({ ...state, isDarkMode }));
 };
 
 export const hydrateIntro = set => async () => {
@@ -43,7 +43,7 @@ export const hydrateIntro = set => async () => {
 };
 
 export const toggleHasSeenIntro = set => () => {
-	cookie.set(EMOTE_INTRO_KEY, true, {expires: 1});
+	cookie.set(EMOTE_INTRO_KEY, true, { expires: 1 });
 
 	set(state => ({
 		...state,
@@ -51,7 +51,7 @@ export const toggleHasSeenIntro = set => () => {
 	}));
 };
 
-export const setProjects = set => projectsList => set({projectsList});
+export const setProjects = set => projectsList => set({ projectsList });
 
 export const useStore = create((...args) => ({
 	// State
@@ -67,5 +67,5 @@ export const useStore = create((...args) => ({
 }));
 
 if (process.env.NODE_ENV === 'development') {
-	isBrowser && mountStoreDevtool('Eмоте Filмs®', useStore);
+	isBrowser && mountStoreDevtool('Universal Element®', useStore);
 }

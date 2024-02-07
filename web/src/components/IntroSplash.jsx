@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import Logo from './Logo';
+import LogoSmall from './LogoSmall';
 import SanityMuxPlayer from 'sanity-mux-player';
 // import MuxPlayer from '@mux/mux-player-react';
 
@@ -11,7 +11,7 @@ import {useStore} from '../store/useStore';
 const ROUTE_DURATION = 400;
 
 const IntroSplash = ({asPath, splash}) => {
-	const [isPlaying, setIsPlaying] = useState(false);
+	const [isPlaying, setIsPlaying] = useState(true);
 	const {hasSeenIntro, toggleHasSeenIntro} = useStore(
 		({hasSeenIntro, toggleHasSeenIntro}) => ({
 			hasSeenIntro,
@@ -23,7 +23,7 @@ const IntroSplash = ({asPath, splash}) => {
 		() => {
 			toggleHasSeenIntro();
 		},
-		isPlaying ? 5000 : null,
+		isPlaying ? 3000 : null,
 	);
 
 	const escapeKeyListener = e => {
@@ -59,9 +59,9 @@ const IntroSplash = ({asPath, splash}) => {
 					<button
 						onClick={toggleHasSeenIntro}
 						title="Skip Intro"
-						className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[11] cursor-pointer">
+						className="fixed flex top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[11] cursor-pointer items-center justify-center w-full h-full">
 						{/* <h1 className="h-32 1000:h-full w-auto text-30"> Universal Element provides naturally purified water to as many as possible, both at home and on the go, by using existing scientific methods efficiently and effectively. </h1> */}
-						<Logo className="w-auto" />
+						<LogoSmall className="1000:w-834 1000:h-full h-100" />
 					</button>
 					{splash?.video && (
 						<div className="image-fill h-full-screen w-screen fixed inset-0">

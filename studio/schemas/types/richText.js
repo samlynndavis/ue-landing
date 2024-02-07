@@ -1,10 +1,10 @@
 import React from 'react';
 import Emoji from 'a11y-react-emoji';
 
-const Icon = () => <Emoji style={{fontSize: '2em'}} symbol="📝" />;
+const Icon = () => <Emoji style={{ fontSize: '2em' }} symbol="📝" />;
 
-const logoStyle = ({children}) => (
-	<span style={{fontWeight: 500}}>{children}</span>
+const logoStyle = ({ children }) => (
+	<span style={{ fontWeight: 500 }}>{children}</span>
 );
 
 export default {
@@ -49,8 +49,8 @@ export default {
 						blockEditor: {
 							render: logoStyle,
 							icon: () => (
-								<span style={{fontWeight: 500}}>
-									Eмоте Filмs®
+								<span style={{ fontWeight: 500 }}>
+									Universal Element®
 								</span>
 							),
 						},

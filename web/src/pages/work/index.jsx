@@ -47,9 +47,9 @@ const Homepage = ({
 	const {push, query} = useRouter();
 
 	const fallbackMeta = {
-		metaTitle: 'Work – Eмоте Filмs®',
-		openGraphTitle: 'Work – Eмоте Filмs®',
-		twitterTitle: 'Work – Eмоте Filмs®',
+		metaTitle: 'Work – Universal Element®',
+		openGraphTitle: 'Work – Universal Element®',
+		twitterTitle: 'Work – Universal Element®',
 		openGraphImage: defaultMeta?.openGraphImage,
 		twitterImage: defaultMeta?.twitterImage,
 	};

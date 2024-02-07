@@ -29,9 +29,9 @@ const ContactPage = ({config = {}, seo = {}, team = [], links = []}) => {
 	const defaultMeta = config?.seo || seo || {};
 
 	const fallbackMeta = {
-		metaTitle: 'Contact - Eмоте Filмs®',
-		openGraphTitle: 'Contact - Eмоте Filмs®',
-		twitterTitle: 'Contact - Eмоте Filмs®',
+		metaTitle: 'Contact - Universal Element®',
+		openGraphTitle: 'Contact - Universal Element®',
+		twitterTitle: 'Contact - Universal Element®',
 		openGraphImage: defaultMeta?.openGraphImage,
 		twitterImage: defaultMeta?.twitterImage,
 	};

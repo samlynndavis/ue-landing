@@ -152,12 +152,12 @@ const Footer = ({address, phone, email, coordinates, asPath}) => {
 		// </footer>
 		<footer
 			className={cx(
-				'mt-auto p-16 pt-1 flex justify-center items-center z-9 relative footer',
+				'mt-auto p-16 pt-1 flex justify-center items-center z-9 1000:fixed bottom-0 w-full',
 				{
-					'1000:mt-0 1000:sticky 1000:bottom-0': asPath === '/about',
-					'snap-start': asPath !== '/about',
-					'bg-[#C3D4D6]': !isDarkMode,
-					'bg-black': isDarkMode,
+					// '1000:mt-0 1000:sticky 1000:bottom-0': asPath === '/about',
+					// 'snap-start': asPath !== '/about',
+					'bg-transparent': !isDarkMode,
+					// 'bg-black': isDarkMode,
 				},
 			)}>
 			{/* <div className="col-span-2 1000:hidden rich-text line-break text-12 leading-14">
@@ -193,23 +193,6 @@ const Footer = ({address, phone, email, coordinates, asPath}) => {
 					reproduced without explicit consent
 				</p>
 			</div> */}
-			<AnimatePresence mode="wait">
-				{asPath !== '/contact' && (
-					<motion.div
-						initial={{opacity: 0}}
-						animate={{opacity: 1}}
-						exit={{opacity: 0}}
-						transition={{duration: ROUTE_DURATION / 1000}}
-						className="hidden 1000:block col-span-1 col-start-4">
-						{/* <Link
-							url="/work"
-							className="font-sans text-12 underline">
-							Work →
-						</Link> */}
-						<div className="bg-[#709094] rounded-full w-24 h-24" url="/" />
-					</motion.div>
-				)}
-			</AnimatePresence>
 			{/* <AnimatePresence mode="wait">
 				{asPath !== '/contact' && (
 					<motion.div
@@ -260,19 +243,10 @@ const Footer = ({address, phone, email, coordinates, asPath}) => {
 				animate={{opacity: 1}}
 				exit={{opacity: 0}}
 				transition={{duration: ROUTE_DURATION / 1000}}
-				className="col-span-3 col-end-13 hidden 1000:flex justify-between items-end">
+				className="col-span-3 col-end-13 1000:flex justify-center items-end">
 				{asPath !== '/contact' && (
-					<nav>
-						<Link
-							url={`tel:${phone}`}
-							className="font-sans text-12 leading-14 block underline transition-underline duration-400 decoration-transparent hover:decoration-current w-fit">
-							{phone}
-						</Link>
-						<Link
-							url={`mailto:${email}`}
-							className="font-sans text-12 leading-14 block underline transition-underline duration-400 decoration-transparent hover:decoration-current w-fit">
-							{email}
-						</Link>
+					<nav className="items-center justify-center flex">
+						<div className="bg-[#709094] rounded-full w-24 h-24" url="/" />
 					</nav>
 				)}
 				{/* <Link

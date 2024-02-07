@@ -38,7 +38,6 @@ export default createSchema({
 		footer,
 		homepage,
 		workpage,
-		// aboutpage,
 		contactpage,
 		page,
 		notFound,

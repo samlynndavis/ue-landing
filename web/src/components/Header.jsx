@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 // import Logo from './Logo';
-import Link from './Link';
+// import Link from './Link';
 
 import {m as motion, AnimatePresence} from 'framer-motion';
 import cx from 'classnames';
@@ -38,7 +38,7 @@ const Header = ({asPath}) => {
 		);
 
 	const desktopNav = (
-		<nav className="gap-36 hidden 1000:flex">
+		<nav className="gap-36 1000:flex">
 			{/* <Link
 				title="Work"
 				className="font-sans text-12 transition-underline duration-400 underline decoration-transparent hover:decoration-current"
@@ -153,7 +153,7 @@ const Header = ({asPath}) => {
 			className={cx(
 				'fixed top-0 left-0 right-0 z-10 p-16 pt-16 flex justify-between header',
 				{
-					'bg-[#C3D4D6] 1000:bg-transparent': !isDarkMode,
+					'bg-[#C3D4D6] bg-transparent': !isDarkMode,
 					'1000:bg-[#C3D4D6]': !isDarkMode && hasScrolled,
 					'bg-black 1000:bg-transparent': isDarkMode,
 					'1000:bg-black': isDarkMode && hasScrolled,
@@ -190,7 +190,7 @@ const Header = ({asPath}) => {
 					</motion.p>
 				)}
 			</AnimatePresence>
-			{mobileMenuButton}
+			{/* {mobileMenuButton} */}
 			{mobileMenu}
 		</motion.header>
 	);

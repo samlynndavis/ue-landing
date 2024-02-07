@@ -42,9 +42,9 @@ export const getStaticProps = async ({params, preview, previewData}) => {
 export default ({config = {}, title, seo = {}, components = []}) => {
 	const defaultMeta = config?.seo || {};
 	const fallbackMeta = {
-		metaTitle: `${title} - Eмоте Filмs®`,
-		openGraphTitle: `${title} - Eмоте Filмs®`,
-		twitterTitle: `${title} - Eмоте Filмs®`,
+		metaTitle: `${title} - Universal Element®`,
+		openGraphTitle: `${title} - Universal Element®`,
+		twitterTitle: `${title} - Universal Element®`,
 	};
 
 	const meta = {

@@ -87,9 +87,9 @@ const Project = ({
 	const defaultMeta = config?.seo || seo || {};
 
 	const fallbackMeta = {
-		metaTitle: `${title} - Eмоте Filмs®`,
-		openGraphTitle: `${title} - Eмоте Filмs®`,
-		twitterTitle: `${title} - Eмоте Filмs®`,
+		metaTitle: `${title} - Universal Element®`,
+		openGraphTitle: `${title} - Universal Element®`,
+		twitterTitle: `${title} - Universal Element®`,
 		openGraphImage: defaultMeta?.openGraphImage,
 		twitterImage: defaultMeta?.twitterImage,
 	};

@@ -1,4 +1,4 @@
-# Eмоте Filмs® Frontend
+# Universal Element® Frontend
 
 This is the headless frontend, based on `Next.js`
 
@@ -14,11 +14,11 @@ This is the headless frontend, based on `Next.js`
 1. Install NPM dependencies
 
 ```
-$ npm install
+npm install
 ```
 
 2. Start the frontend process; this runs on port `3000`.
 
 ```
-$ npm start
+npm start
 ```

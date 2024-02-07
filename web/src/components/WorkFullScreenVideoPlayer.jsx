@@ -11,7 +11,7 @@ const WorkFullScreenVideoPlayer = ({video, poster}) => {
 		<div className="image-fill h-screen w-screen">
 			{poster?.url && (
 				<Image
-					alt={poster.alt || 'Eмоте Filмs®'}
+					alt={poster.alt || 'Universal Element®'}
 					sources={[
 						{
 							url: poster.url,
