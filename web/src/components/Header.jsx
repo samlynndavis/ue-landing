@@ -151,7 +151,7 @@ const Header = ({asPath}) => {
 				duration: ROUTE_DURATION / 1000,
 			}}
 			className={cx(
-				'fixed top-0 left-0 right-0 z-10 p-16 pt-16 flex justify-between header',
+				'top-0 left-0 right-0 z-10 p-16 pt-16 flex justify-between header',
 				{
 					'bg-transparent': !isDarkMode,
 					'1000:bg-[#C3D4D6]': !isDarkMode && hasScrolled,
