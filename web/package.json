@@ -1,8 +1,8 @@
 {
-	"name": "emote-films-frontend",
+	"name": "universal-element-frontend",
 	"private": true,
 	"version": "1.0.0",
-	"author": "Estudio Buena Suerte <info@buena-suerte.studio>",
+	"author": "STUDIO LYNN <info@studiolynn.co>",
 	"scripts": {
 		"start": "next dev",
 		"build": "npm run next:build",

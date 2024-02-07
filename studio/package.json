@@ -1,10 +1,10 @@
 {
-	"name": "emote-films-cms",
+	"name": "universal-element-cms",
 	"private": true,
 	"version": "1.0.0",
 	"description": "",
 	"main": "package.json",
-	"author": "Estudio Buena Suerte <info@buena-suerte.studio>",
+	"author": "STUDIO LYNN <info@bstudiolynn.co>",
 	"license": "UNLICENSED",
 	"scripts": {
 		"start": "npm run sanity:start",

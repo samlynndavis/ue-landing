@@ -143,17 +143,17 @@ const App = ({Component, pageProps, router}) => {
 	}, [router]);
 
 	// Site credit on load
-	useEffect(() => {
-		// Code credit
-		console.group('Site Credits');
-		console.log(
-			'Web Design by Bureau for Visual Communications https://www.bvk.international/',
-		);
-		console.log(
-			'Web Development by Buena Suerte https://buena-suerte.studio',
-		);
-		console.groupEnd();
-	}, []);
+	// useEffect(() => {
+	// 	// Code credit
+	// 	console.group('Site Credits');
+	// 	console.log(
+	// 		'Web Design by 
+	// 	);
+	// 	console.log(
+	// 		'Web Development by STUDIO LYNN',
+	// 	);
+	// 	console.groupEnd();
+	// }, []);
 
 	const animatedRoutes = (
 		<AnimatePresence mode="wait" onExitComplete={resetScroll}>
