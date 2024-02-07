@@ -105,7 +105,7 @@ const Homepage = ({config = {}, seo = {}, list = [], description}) => {
 										<div className="pb-20">
 											<div>
 												<h2 className="1000:text-24 text-18 1000:pb-20 pb-10 uppercase">
-												Water Bottle
+												Water Bottles
 												</h2>
 												<p className="1000:text-16 text-13 pb-20 leading-24">Our anti-microbial 550ml and 800ml water bottles are based on the patented Merella technology originally developed for the healthcare sector. For the bottle to self-sanitise, it only needs to be left empty for 5 minutes. Independent lab tests have confirmed that 99% bacteria disappear within that time.</p>
 												<p className="1000:text-16 text-13 pb-40 leading-24">The technology is not silver-coating based. Rather the molecules are compounded into our plastic, and the self-sanitising properties become inherent to the bottle. Our anti-microbial additive cannot be washed out, abraded away, or leached into the beverages.</p>
