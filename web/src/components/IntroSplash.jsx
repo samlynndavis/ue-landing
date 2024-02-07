@@ -60,7 +60,6 @@ const IntroSplash = ({asPath, splash}) => {
 						onClick={toggleHasSeenIntro}
 						title="Skip Intro"
 						className="fixed flex top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[11] cursor-pointer items-center justify-center w-full h-full">
-						{/* <h1 className="h-32 1000:h-full w-auto text-30"> Universal Element provides naturally purified water to as many as possible, both at home and on the go, by using existing scientific methods efficiently and effectively. </h1> */}
 						<LogoSmall className="1000:w-834 1000:h-full h-100" />
 					</button>
 					{splash?.video && (
